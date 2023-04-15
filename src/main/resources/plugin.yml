@@ -1,0 +1,25 @@
+name: RowdyVoteP
+version: '${project.version}'
+main: main.RowdyVoteP
+api-version: 1.19
+commands:
+  balance:
+    description: Проверить свой баланс
+    subcommands:
+      transfer:
+        description: Отправить сумму игроку
+      set:
+        description: Установить баланс игроку
+  balances:
+    description: Вывести таблицу балансов всех игроков
+  votes:
+    description: vote?
+    subcommands:
+      info:
+        description: Посмотреть информацию плагина
+      create:
+        description: Создать голосование
+      list:
+        description: Посмотреть список голосований
+  vote:
+    description: Проголосовать
