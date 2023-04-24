@@ -1,0 +1,11 @@
+main\RowdyVotesP.class
+main\counters\VoteFee.class
+main\tabs\balances_tab.class
+main\commands\votes.class
+main\commands\vote.class
+main\tabs\votes_tab.class
+main\listeners\join_leave.class
+main\commands\balances.class
+main\listeners\blockbreak.class
+main\commands\balance.class
+main\commands\votes$1.class
