@@ -1,6 +1,5 @@
 package main.commands;
 
-import main.RowdyVoteP;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.HoverEvent;

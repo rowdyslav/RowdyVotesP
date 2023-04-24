@@ -1,6 +1,5 @@
 package main.listeners;
 
-import main.RowdyVoteP;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -12,7 +11,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 
-import static main.RowdyVoteP.setPlayerBalance;
+import static main.RowdyVotesP.setPlayerBalance;
 
 public class join_leave implements Listener {
 

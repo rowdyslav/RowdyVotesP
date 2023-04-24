@@ -1,13 +1,13 @@
 package main.commands;
 
-import main.RowdyVoteP;
+import main.RowdyVotesP;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import static main.RowdyVoteP.*;
+import static main.RowdyVotesP.*;
 
 public class balance implements CommandExecutor {
 
@@ -62,9 +62,9 @@ public class balance implements CommandExecutor {
                 }
                 removePlayerBalance(sender.getName(), amount);
                 addPlayerBalance(target_name, amount);
-                sender.sendMessage("§aТы перевел " + amount + " " + wallet + " игроку " + target_name);
+                sender.sendMessage("§aТы перевел " + amount + wallet + " игроку " + target_name);
                 if (target != null) {
-                    target.sendMessage("§aТебе было переведено " + amount + " " + wallet + " от игрока " + sender.getName());
+                    target.sendMessage("§aТебе было переведено " + amount + wallet + " от игрока " + sender.getName());
                 }
             }
             case "set" -> {
@@ -72,9 +72,9 @@ public class balance implements CommandExecutor {
                     sender.sendMessage("Недостаточно прав!");
                     return false;
                 }
-                if (args.length == 2) {
-                    RowdyVoteP.setPlayerBalance(args[0], Integer.parseInt(args[1]));
-                    sender.sendMessage("§aВы установили баланс" + Integer.parseInt(args[1]) + " " + wallet + " игроку " + args[0]);
+                if (args.length == 3) {
+                    RowdyVotesP.setPlayerBalance(args[1], Integer.parseInt(args[2]));
+                    sender.sendMessage("§aВы установили баланс " + Integer.parseInt(args[2]) + wallet + " игроку " + args[1]);
                     return true;
                 } else {
                     sender.sendMessage("§cИспользование: /balance set <игрок> <баланс>");

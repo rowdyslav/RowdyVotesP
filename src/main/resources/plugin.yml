@@ -1,6 +1,6 @@
-name: RowdyVoteP
+name: RowdyVotesP
 version: '${project.version}'
-main: main.RowdyVoteP
+main: main.RowdyVotesP
 api-version: 1.19
 commands:
   balance:
@@ -13,10 +13,8 @@ commands:
   balances:
     description: Вывести таблицу балансов всех игроков
   votes:
-    description: vote?
+    description: Посмотреть информацию плагина
     subcommands:
-      info:
-        description: Посмотреть информацию плагина
       create:
         description: Создать голосование
       list:
